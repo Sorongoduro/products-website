@@ -6,7 +6,7 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form)
     const formDataJson = Object.fromEntries(formData)
     console.log(formDataJson)
-    const url = 'http://localhost:3001/producto'
+    const url = 'https://allproducts-api.herokuapp.com/producto'
     fetch(url, {
         method: 'POST',
         body: JSON.stringify(formDataJson),
