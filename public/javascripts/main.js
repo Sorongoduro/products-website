@@ -7,7 +7,7 @@ search.addEventListener('keyup', () => {
 
     productName.forEach(el => {
         if(search.value[0] != undefined) {
-            if (search.value[0] != el.innerText.toLowerCase()[0]) {
+            if (search.value[0] != el.innerText[0]) {
                 el.classList.remove('visible')
             } else {
                 el.classList.add('visible')
