@@ -5,17 +5,17 @@ const productName = document.querySelectorAll('.product-name')
 
 search.addEventListener('keyup', () => {
 
+    let lowSearch = search.value.toUpperCase()
     productName.forEach(el => {
-        if(search.value[0] != undefined) {
-            if (search.value[0] != el.innerText[0]) {
+        if(lowSearch[0] != undefined) {
+            if (lowSearch[0] != el.innerText[0]) {
                 el.classList.remove('visible')
             } else {
                 el.classList.add('visible')
             }
         }
-        if(search.value[0] == undefined) {
+        if(lowSearch[0] == undefined) {
             el.classList.add('visible')
         }
     })
 })
-

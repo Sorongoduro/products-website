@@ -7,12 +7,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
+
 }
 
 .product-name {
   visibility: hidden;
   opacity: 0;
   display: none;
+  
 }
 
 .product-name.visible {
