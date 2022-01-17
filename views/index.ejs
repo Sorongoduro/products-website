@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <label>
+    Producto:
+    <input class="search" type="text">
+  </label>
+
+
+  <div class="list-container">
+    <% productos.forEach(el=> { %>
+
+        <div class="product-name visible">
+
+          <div class="product-container">
+
+            <h2>
+              <%= el.name %>
+            </h2>
+            <p>$<%= el.price %> </p>
+            <!-- <div class="size-container">
+              <span class="sum">+</span>
+              <span class="sub">-</span>
+            </div> -->
+            <span><%= total++ %> </span>
+          </div>
+  
+        </div>
+
+
+      <% }) %>
+
+  </div>
+      <script src="/javascripts/main.js"></script>
+</body>
+
+</html>
