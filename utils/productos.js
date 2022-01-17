@@ -1,6 +1,6 @@
 const request = require('postman-request')
 
-const BASE_URL = 'http://localhost:3001/productos'
+const BASE_URL = 'https://allproducts-api.herokuapp.com/productos'
 
 let getAllProducts = (callback) => {
     request(BASE_URL, (err, res, body) => {
